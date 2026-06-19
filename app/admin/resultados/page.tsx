@@ -1,6 +1,8 @@
 import { supabaseAdmin } from '@/lib/supabase-server';
 import { DIMENSION_LABELS, DIMENSIONS } from '@/lib/dimensions';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Page() {
   const s = supabaseAdmin();
 
