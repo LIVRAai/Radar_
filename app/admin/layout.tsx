@@ -1,0 +1,3 @@
+'use client';
+import { useEffect, useState } from 'react';import { usePathname } from 'next/navigation';import { supabaseBrowser } from '@/lib/supabase';
+export default function AdminLayout({children}:{children:React.ReactNode}){const pathname=usePathname();const [ok,setOk]=useState<boolean|null>(pathname==='/admin/login');useEffect(()=>{if(pathname==='/admin/login')return;supabaseBrowser().auth.getSession().then(({data})=>{const authed=!!data.session;setOk(authed);if(!authed) location.href='/admin/login';})},[pathname]);if(ok===null)return <div className="card">Verificando sesión...</div>;return <>{children}</>}
