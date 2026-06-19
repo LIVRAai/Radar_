@@ -1,0 +1,4 @@
+export const DIMENSIONS = ['seguridad','empleo_desarrollo_economico','salud','educacion','infraestructura_movilidad','medio_ambiente','transparencia_corrupcion','participacion_ciudadana','cultura_deporte','servicios_publicos'] as const;
+export type Dimension = typeof DIMENSIONS[number];
+export const DIMENSION_LABELS: Record<Dimension,string> = {seguridad:'Seguridad',empleo_desarrollo_economico:'Empleo y desarrollo económico',salud:'Salud',educacion:'Educación',infraestructura_movilidad:'Infraestructura y movilidad',medio_ambiente:'Medio ambiente',transparencia_corrupcion:'Transparencia y corrupción',participacion_ciudadana:'Participación ciudadana',cultura_deporte:'Cultura y deporte',servicios_publicos:'Servicios públicos'};
+export const emptyScores=()=>Object.fromEntries(DIMENSIONS.map(d=>[d,0])) as Record<Dimension,number>;
