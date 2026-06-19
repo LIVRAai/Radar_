@@ -1,0 +1,2 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{color:#17202a;background:#f5f7f9}.card{ @apply rounded-2xl border border-line bg-white p-5 shadow-sm}.btn{ @apply inline-flex items-center justify-center rounded-xl bg-ink px-4 py-2 font-medium text-white hover:bg-slateblue disabled:opacity-50}.input{ @apply w-full rounded-xl border border-line bg-white px-3 py-2}.label{ @apply text-sm font-medium text-slateblue}.link{ @apply text-ink underline underline-offset-4}
