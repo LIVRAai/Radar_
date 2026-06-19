@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Admin(){return <div className="grid gap-4 md:grid-cols-2"><h1 className="md:col-span-2 text-3xl font-bold">Panel administrador</h1>{[['Municipios','/admin/municipios'],['Candidatos','/admin/candidatos'],['Preguntas','/admin/preguntas'],['Resultados','/admin/resultados']].map(x=><Link className="card hover:bg-mist" href={x[1]} key={x[1]}>{x[0]}</Link>)}</div>}

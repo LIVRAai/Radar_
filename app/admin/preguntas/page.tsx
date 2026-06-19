@@ -1,0 +1,1 @@
+import { AdminCrud } from '@/components/AdminTable';export default function Page(){return <AdminCrud table="questions" fields={['municipality_id','question_text','option_a_text','option_a_dimension','option_b_text','option_b_dimension','option_c_text','option_c_dimension','option_d_text','option_d_dimension','is_active']}/>}
