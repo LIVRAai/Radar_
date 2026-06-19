@@ -12,7 +12,6 @@
     "pdf-parse": "^1.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "uuid": "^10.0.0",
     "zod": "^3.23.0"
   },
   "devDependencies": {
@@ -26,6 +25,7 @@
     "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
-    "autoprefixer": "latest"
+    "autoprefixer": "latest",
+    "@types/uuid": "latest"
   }
 }
